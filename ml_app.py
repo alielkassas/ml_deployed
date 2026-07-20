@@ -11,6 +11,9 @@ st.set_page_config(
     layout="wide"
 )
 
+st.write("Starting app...")
+
+
 # -----------------------------
 # Load Model
 # -----------------------------
@@ -18,7 +21,9 @@ st.set_page_config(
 def load_model():
     return joblib.load("model.pkl")
 
+st.write("Loading model...")
 model = load_model()
+st.write("Model loaded suc")
 
 # -----------------------------
 # Title
